@@ -17,10 +17,30 @@ body {
 }
 
 .heading {
-    color: #22222277;
-    text-shadow: 0 5px #309730;
+    display: flex;
+    color: #333;
+    /* text-shadow: 0 5px #309730; */
     margin-bottom: 20px;
+    /* border: 1px solid #bfbfbf;
+    border-radius: 12px;
+    background-color: #eee; */
+    padding: 10px 50px;
+}
+
+
+.heading div {
+    height: 88px;
+    object-fit: cover;
+    margin-right: -15px;
+}
+
+.heading div img {
+    height: 100px;
+}
+
+.heading span {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-self: flex-end;
 }
 
 .wrapper {
