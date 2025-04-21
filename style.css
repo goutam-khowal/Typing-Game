@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: greenyellow;
+    min-height: 100vh;
+}
+
+.heading {
+    color: #22222277;
+    text-shadow: 0 5px #309730;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.wrapper {
+    width: 770px;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px #00000055;
+}
+
+.wrapper .input-field {
+    position: absolute;
+    padding: 13px 20px 0;
+    opacity: 0;
+    z-index: -99;
+}
+
+.wrapper .content-box {
+    padding: 13px 20px 0;
+    border: 1px solid #bfbfbf;
+    border-radius: 12px;
+}
+
+.content-box .content {
+    margin-top: 18px;
+    display: flex;
+    padding: 12px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #bfbfbf;
+}
+
+.content-box .result-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 140px);
+}
+
+.result-details li {
+    display: flex;
+    height: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+.content button {
+    outline: none;
+    border: none;
+    width: 105px;
+    padding: 18px 0;
+    background-color: #95df27;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.content button:active {
+    transform: scale(0.95)
+}
+
+.content button.disabled {
+    transform: none;
+}
+
+.typing-text p span {
+    position: relative;
+}
+
+.typing-text p span.active {
+    color: #9cff06;
+}
+
+.typing-text p span.correct {
+    color: green
+}
+
+.typing-text p span.incorrect {
+    color: red;
+    background: #ffc0cb;
+    border-radius: 4px;
+}
+
+/* Selection */
+::selection {
+    color: #fff;
+    background-color: #34a934;
+}
